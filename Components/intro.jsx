@@ -25,7 +25,7 @@ export default function Intro() {
 
   return (
     <section
-      className="mb-28 max-w-[50rem] text-center sm:mb-28 sm:mt-28"
+      className="mb-28 max-w-[50rem] text-center sm:mb-28 sm:mt-28 scroll-mt-[100rem]"
       id="home"
       ref={ref}
     >
@@ -63,7 +63,7 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hey, I'm Dana.</span> I'm a{" "}
+        <span className="font-bold">Hey, I'm Dana Shorts.</span> I'm a{" "}
         <span className="font-bold"> software developer</span> with{" "}
         <span className="font-bold">9 years experience.</span> I enjoy building
         things on both the{" "}
@@ -81,13 +81,17 @@ export default function Intro() {
         <Link
           href="#contact"
           className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+          onClick={() => {
+            setActiveSection("Contact");
+            // setTimeOfLastClick(Date.now());
+          }}
         >
           Say Hello!{" "}
           <BsArrowRight className="group-hover:translate-x-1 transition opacity-70" />
         </Link>
 
         <a
-          className="group bg-white flex items-center px-7 py-3 gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 cursor-pointer border border-black/10 transition"
+          className="group bg-white flex items-center px-7 py-3 gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 cursor-pointer borderBlack/10 transition"
           href="/Dana_Shorts_Resume.pdf"
           download={true}
         >

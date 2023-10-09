@@ -19,9 +19,6 @@ export default function SectionDivider() {
       <motion.div
         before
         className="absolute top-7 left-[11px] h-[5px] w-[5px] rounded-full bg-gray-500 animate-wheel"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.5 }}
       ></motion.div>
     </motion.div>
   );

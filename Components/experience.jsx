@@ -24,7 +24,11 @@ export default function Experience() {
   }, [inView, setActiveSection, timeOfLastClick]);
 
   return (
-    <section ref={ref} id="experience" className="sm:mt-28 mt-28">
+    <section
+      ref={ref}
+      id="experience"
+      className="sm:mt-28 mt-28 scroll-mt-28 mb-28 sm:mb-28"
+    >
       <SectionHeading>Experience</SectionHeading>
 
       <VerticalTimeline
